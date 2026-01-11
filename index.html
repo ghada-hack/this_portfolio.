@@ -46,7 +46,7 @@
       </section>
       <section class="contact-card" id="contact">
     <div class="contact-content">
-        <span class="contact-label">Have some questions? <br> Tape me :)</span>
+        <span class="contact-label">Have some questions? <br> Tape here :)</span>
         <h2 class="contact-title">Contact me</h2>
         <svg class="arrow" viewBox="0 0 24 24">
             <path d="M5 12h14" />
@@ -126,6 +126,12 @@
         window.open('https://linkedin.com/in/ghada-miftah-3b1249363', '_blank');
       });
     }
+      const contactLinks = document.querySelector('.contact-links');
+      if (contactLinks) {
+        contactLinks.addEventListener('click', function(event) {
+        event.stopPropagation();
+        });
+      }
     const museaLink = document.querySelector('.project-item .project-link');
     if (museaLink) {
       museaLink.addEventListener('click', function() {
@@ -136,3 +142,4 @@
   </script>
 </body>
 </html>
+
