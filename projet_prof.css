@@ -144,6 +144,11 @@
       object-fit: cover;
       box-shadow: 0 8px 15px rgba(54, 70, 72, 0.6);
     }
+.hero-image img:hover{
+        opacity: 1;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
 
     .flower {
       position: absolute;
@@ -437,4 +442,5 @@
       .projects {
         grid-column: span 1;
       }
+
     }
